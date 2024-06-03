@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buttons</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .reactive-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .reactive-button:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .rounded-button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .shadow-drop-button {
+            background-color: #f44336;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            box-shadow: 0 9px #999;
+        }
+
+        .shadow-drop-button:hover {
+            background-color: #d32f2f;
+        }
+
+        .shadow-drop-button:active {
+            background-color: #d32f2f;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Buttons</h1>
+    <nav>
+        <ul>
+            <li><a href="#reactive">Reactive</a></li>
+            <li><a href="#rounded">Rounded</a></li>
+            <li><a href="#shadow-drop">Shadow Drop</a></li>
+        </ul>
+    </nav>
+    <section id="reactive">
+        <h2>Reactive Buttons</h2>
+        <button class="reactive-button">Hover me!</button>
+    </section>
+    <section id="rounded">
+        <h2>Rounded Buttons</h2>
+        <button class="rounded-button">Rounded</button>
+    </section>
+    <section id="shadow-drop">
+        <h2>Shadow Drop Buttons</h2>
+        <button class="shadow-drop-button">Click me</button>
+    </section>
 </body>
 </html>

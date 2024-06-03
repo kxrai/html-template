@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cards</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .reactive-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .reactive-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .rounded-card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Cards</h1>
+    <nav>
+        <ul>
+            <li><a href="#reactive">Reactive</a></li>
+            <li><a href="#rounded">Rounded</a></li>
+        </ul>
+    </nav>
+    <section id="reactive">
+        <h2>Reactive Cards</h2>
+        <div class="reactive-card">
+            <h3>Reactive Card</h3>
+            <p>This is an example of a reactive card. Hover to see the effect!</p>
+        </div>
+    </section>
+    <section id="rounded">
+        <h2>Rounded Cards</h2>
+        <div class="rounded-card">
+            <h3>Rounded Card</h3>
+            <p>This is an example of a card with rounded corners.</p>
+        </div>
+    </section>
 </body>
 </html>
